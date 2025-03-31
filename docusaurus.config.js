@@ -78,7 +78,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/postyizhan/Wiki-Template',
+            href: 'https://github.com/pingguomc/Wiki',
             label: 'GitHub',
             position: 'right',
           },
@@ -106,7 +106,7 @@ const config = {
             items: [
               {
                 label: 'QQ群',
-                href: 'a',
+                href: 'https://github.com/pingguomc/Wiki',
               },
             ],
           },
