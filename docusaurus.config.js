@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '红星游戏社区 历史维基',
+  title: '红星游戏社区 维基',
   tagline: 'Docusaurus 插件文档模板',
   favicon: 'img/favicon.ico',
 
@@ -43,7 +43,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           editUrl:
-            'https://github.com/postyizhan/Wiki-Template/blob/main'
+            'https://github.com/pingguomc/Wiki/blob/main'
         },
         blog: false,
         theme: {
@@ -106,7 +106,7 @@ const config = {
             items: [
               {
                 label: 'QQ群',
-                href: 'https://qm.qq.com/q/dENGavSflK',
+                href: 'a',
               },
             ],
           },
@@ -115,13 +115,13 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/postyizhan/Wiki-Template',
+                href: 'https://github.com/pingguomc/Wiki',
               },
             ],
           },
         ],
         // 底部版权信息
-        copyright: `Copyright © ${new Date().getFullYear()} Neige, All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} RedStarMC Community, All Rights Reserved.`,
       },
       // 深浅主题
       prism: {
