@@ -10,6 +10,17 @@ sidebar_position: 1
 aaaa啊啊
 :::
 
+:::note
+aaaa啊啊
+:::
+
+:::warning
+aaaa啊啊
+:::
+
+:::danger
+aaaa啊啊
+:::
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
