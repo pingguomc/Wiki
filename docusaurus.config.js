@@ -176,7 +176,7 @@ const config = {
         require.resolve("@easyops-cn/docusaurus-search-local"),
         {
           hashed: true,
-          language: ["zh-Hans"],
+          language: ['zh-Hans'],
           highlightSearchTermsOnTargetPage: true,
           explicitSearchResultPath: true,
           indexBlog: false,
