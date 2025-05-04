@@ -6,6 +6,8 @@ on:
       - 'main'
   pull_request:
     types: [opened, reopened]
+  pull_request_review:
+    types: [edited]
 
 jobs:
   deploy:
