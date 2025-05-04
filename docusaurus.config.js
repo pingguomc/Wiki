@@ -72,6 +72,27 @@ const config = {
             position: 'left',
             label: '开始',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '历史',
+            docsPluginId: 'history'
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '管理人员',
+            docsPluginId: 'admin'
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '日志',
+            docsPluginId: 'logs'
+          },
           // 搜索框
           {
             type: 'search',
@@ -172,17 +193,7 @@ const config = {
       ],
     ],
     themes: [
-      [
-        require.resolve("@easyops-cn/docusaurus-search-local"),
-        {
-          hashed: true,
-          language: ['zh-Hans'],
-          highlightSearchTermsOnTargetPage: true,
-          explicitSearchResultPath: true,
-          indexBlog: false,
-          docsRouteBasePath: "/"
-        },
-      ],
+        '@docusaurus/theme-mermaid'
     ],
 };
 
