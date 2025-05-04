@@ -133,7 +133,44 @@ const config = {
         respectPrefersColorScheme: true,
       },
     }),
-
+    plugins: [
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'admin',
+          path: 'admin',
+          routeBasePath: 'admin',
+          sidebarPath: './sidebars.js',
+          editCurrentVersion: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+        },
+      ],
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'history',
+          path: 'history',
+          routeBasePath: 'history',
+          sidebarPath: './sidebars.js',
+          editCurrentVersion: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+        },
+      ],
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'logs',
+          path: 'logs',
+          routeBasePath: 'logs',
+          sidebarPath: './sidebars.js',
+          editCurrentVersion: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+        },
+      ],
+    ],
     themes: [
       [
         require.resolve("@easyops-cn/docusaurus-search-local"),
