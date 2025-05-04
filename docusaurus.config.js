@@ -73,21 +73,21 @@ const config = {
             label: '开始',
           },
           {
-            type: 'docSidebar',
+            type: 'doc',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '历史',
             docsPluginId: 'history'
           },
           {
-            type: 'docSidebar',
+            type: 'doc',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '管理人员',
             docsPluginId: 'admin'
           },
           {
-            type: 'docSidebar',
+            type: 'doc',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '日志',
