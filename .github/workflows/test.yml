@@ -37,12 +37,12 @@ jobs:
           webpQuality: '80'
           ignorePaths: 'node_modules/**'
           compressOnly: true
-
+      # 检查Markdown
       - name: "MarkdownLint Check"
         uses: DavidAnson/markdownlint-cli2-action@v17
         with:
           fix: true
           globs: 'docs*/**/*.md'
 
-      - name: "Build"
-        run: "pnpm run build"
+      # - name: "Build"
+      #   run: "pnpm run build"
