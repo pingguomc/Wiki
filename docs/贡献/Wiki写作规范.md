@@ -1,5 +1,5 @@
 ---
-sidebar_position: 998
+sidebar_position: 1
 ---
 
 # 写作规范
