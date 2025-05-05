@@ -42,10 +42,11 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/redstarmc/Wiki/blob/main',
           editCurrentVersion: true,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          editUrl:
+            'https://github.com/redstarmc/Wiki/blob/main'
         },
         blog: false,
         theme: {
