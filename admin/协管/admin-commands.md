@@ -29,9 +29,9 @@ sidebar_position: 2
 
 参数： /mute _player_ _time_ _reason_
 
-* \<time>: 被禁言的玩家
-* \<time>: 禁言时间
-* \<reason>: 禁言原因
+* _time_: 被禁言的玩家
+* _time_: 禁言时间
+* _reason_: 禁言原因
 
 其他指令：
 
