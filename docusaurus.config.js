@@ -42,6 +42,9 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
+          editCurrentVersion: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           editUrl:
             'https://github.com/redstarmc/Wiki/blob/main'
         },
@@ -66,6 +69,11 @@ const config = {
         },
         hideOnScroll: false,
         items: [
+          // 搜索框
+          {
+            type: 'search',
+            position: 'right',
+          },
           {
             type: 'doc',
             docId: 'intro',
@@ -92,11 +100,6 @@ const config = {
             position: 'left',
             label: '日志',
             docsPluginId: 'logs'
-          },
-          // 搜索框
-          {
-            type: 'search',
-            position: 'right',
           },
           {
             href: 'https://github.com/redstarmc/Wiki',
