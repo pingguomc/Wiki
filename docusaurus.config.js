@@ -42,8 +42,10 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl:
-            'https://github.com/redstarmc/Wiki/blob/main'
+          editUrl: 'https://github.com/redstarmc/Wiki/blob/main',
+          editCurrentVersion: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
@@ -73,21 +75,21 @@ const config = {
             label: '开始',
           },
           {
-            type: 'docSidebar',
+            type: 'doc',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '历史',
             docsPluginId: 'history'
           },
           {
-            type: 'docSidebar',
+            type: 'doc',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '管理人员',
             docsPluginId: 'admin'
           },
           {
-            type: 'docSidebar',
+            type: 'doc',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '日志',
