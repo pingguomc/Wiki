@@ -69,6 +69,11 @@ const config = {
         },
         hideOnScroll: false,
         items: [
+          // 搜索框
+          {
+            type: 'search',
+            position: 'right',
+          },
           {
             type: 'doc',
             docId: 'intro',
@@ -76,30 +81,25 @@ const config = {
             label: '开始',
           },
           {
-            type: 'doc',
+            type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '历史',
             docsPluginId: 'history'
           },
           {
-            type: 'doc',
+            type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '管理人员',
             docsPluginId: 'admin'
           },
           {
-            type: 'doc',
+            type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: '日志',
             docsPluginId: 'logs'
-          },
-          // 搜索框
-          {
-            type: 'search',
-            position: 'right',
           },
           {
             href: 'https://github.com/redstarmc/Wiki',
