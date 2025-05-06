@@ -69,11 +69,6 @@ const config = {
         },
         hideOnScroll: false,
         items: [
-          // 搜索框
-          {
-            type: 'search',
-            position: 'right',
-          },
           {
             type: 'doc',
             docId: 'intro',
@@ -94,12 +89,17 @@ const config = {
             label: '管理人员',
             docsPluginId: 'admin'
           },
+//          {
+//            type: 'docSidebar',
+//            sidebarId: 'tutorialSidebar',
+//            position: 'left',
+//            label: '日志',
+//            docsPluginId: 'logs'
+//          },
+          // 搜索框
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '日志',
-            docsPluginId: 'logs'
+            type: 'search',
+            position: 'right',
           },
           {
             href: 'https://github.com/redstarmc/Wiki',
@@ -129,8 +129,16 @@ const config = {
             title: '交流',
             items: [
               {
-                label: 'QQ群',
-                href: 'https://qm.qq.com/q/DgLkRPwVua',
+                label: '官网',
+                href: 'https://www.redstarmc.top/'
+              },
+              {
+                label: '外置登陆身份验证系统',
+                href: 'https://login.redstarmc.top'
+              },
+              {
+                label: 'QQ频道',
+                href: 'https://pd.qq.com/s/1dxf9takj',
               },
             ],
           },
@@ -158,6 +166,13 @@ const config = {
       },
     }),
     plugins: [
+      [
+        '@easyops-cn/docusaurus-search-local',
+        {
+            indexDocs: true,
+            language: "zh",
+        },
+      ],
       [
         '@docusaurus/plugin-content-docs',
         {
