@@ -140,10 +140,6 @@ const config = {
                 label: 'QQ频道',
                 href: 'https://pd.qq.com/s/1dxf9takj',
               },
-              {
-                label: '邮箱',
-                href: 'report@redstarmc.top'
-              }
             ],
           },
           {
