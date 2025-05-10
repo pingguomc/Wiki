@@ -21,6 +21,7 @@ sidebar_position: 5
 * /spawn ---返回主城
 * /warp ---查看地标
 * /bs ---打开菜单
+* /world ---如果进入其他世界,可以返回主城
 
 ## 机制
 
