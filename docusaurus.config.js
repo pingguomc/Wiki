@@ -79,14 +79,14 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '历史',
-            docsPluginId: 'history'
+            label: '近期更新',
+            docsPluginId: 'release'
           },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '管理人员',
+            position: 'right',
+            label: '管理员必看',
             docsPluginId: 'admin'
           },
 //          {
