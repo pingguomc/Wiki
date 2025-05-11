@@ -79,14 +79,14 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '历史',
-            docsPluginId: 'history'
+            label: '近期更新',
+            docsPluginId: 'release'
           },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '管理人员',
+            position: 'right',
+            label: '管理员必看',
             docsPluginId: 'admin'
           },
 //          {
@@ -192,27 +192,27 @@ const config = {
       [
         '@docusaurus/plugin-content-docs',
         {
-          id: 'history',
-          path: 'history',
-          routeBasePath: 'history',
+          id: 'release',
+          path: 'release',
+          routeBasePath: 'release',
           sidebarPath: './sidebars.js',
           editCurrentVersion: true,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
       ],
-      [
-        '@docusaurus/plugin-content-docs',
-        {
-          id: 'logs',
-          path: 'logs',
-          routeBasePath: 'logs',
-          sidebarPath: './sidebars.js',
-          editCurrentVersion: true,
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
-        },
-      ],
+      // [
+      //   '@docusaurus/plugin-content-docs',
+      //   {
+      //     id: 'logs',
+      //     path: 'logs',
+      //     routeBasePath: 'logs',
+      //     sidebarPath: './sidebars.js',
+      //     editCurrentVersion: true,
+      //     showLastUpdateAuthor: true,
+      //     showLastUpdateTime: true,
+      //   },
+      // ],
     ],
     themes: [
 
