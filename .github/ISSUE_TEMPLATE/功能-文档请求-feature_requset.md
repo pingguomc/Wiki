@@ -1,0 +1,17 @@
+---
+name: 功能/文档请求 feature_requset
+about: 为本项目的功能/文档提出一个建议 Suggest an idea for this project
+title: "[建议]"
+labels: 增强
+assignees: ''
+
+---
+
+**简要描述这个建议？**
+你为什么要提出这个建议？这个建议实现的目的是什么？
+
+**提供的方案**
+
+**备选方案**
+
+**其他内容**
