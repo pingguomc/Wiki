@@ -192,27 +192,27 @@ const config = {
       [
         '@docusaurus/plugin-content-docs',
         {
-          id: 'history',
-          path: 'history',
-          routeBasePath: 'history',
+          id: 'release',
+          path: 'release',
+          routeBasePath: 'release',
           sidebarPath: './sidebars.js',
           editCurrentVersion: true,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
       ],
-      [
-        '@docusaurus/plugin-content-docs',
-        {
-          id: 'logs',
-          path: 'logs',
-          routeBasePath: 'logs',
-          sidebarPath: './sidebars.js',
-          editCurrentVersion: true,
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
-        },
-      ],
+      // [
+      //   '@docusaurus/plugin-content-docs',
+      //   {
+      //     id: 'logs',
+      //     path: 'logs',
+      //     routeBasePath: 'logs',
+      //     sidebarPath: './sidebars.js',
+      //     editCurrentVersion: true,
+      //     showLastUpdateAuthor: true,
+      //     showLastUpdateTime: true,
+      //   },
+      // ],
     ],
     themes: [
 
