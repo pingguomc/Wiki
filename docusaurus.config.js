@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '红星游戏社区 维基',
-  tagline: 'Docusaurus 插件文档模板',
+  tagline: 'RedStarMC社区的百科全书',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -62,7 +62,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Wiki-Template',
+        title: '红星游戏社区',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
