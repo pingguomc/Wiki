@@ -1,4 +1,4 @@
 [[redirects]]
-from = "/"
-to = "/Wiki"
+from = "/*"
+to = "/Wiki/*"
 status = 301
