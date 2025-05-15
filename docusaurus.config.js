@@ -86,7 +86,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'right',
-            label: '管理员必看',
+            label: '管理人员必看',
             docsPluginId: 'admin'
           },
 //          {
@@ -113,11 +113,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '文档',
+            title: '维基',
             items: [
               {
                 label: '开始',
                 to: '/intro',
+              },
+              {
+                label: '关于',
+                to: '/about',
               },
               {
                 label: 'GitHub',
