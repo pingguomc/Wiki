@@ -124,6 +124,10 @@ const config = {
                 to: '/about',
               },
               {
+                label: '已归档',
+                to: '/deprecated/intro',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/redstarmc/Wiki',
               },
@@ -201,6 +205,17 @@ const config = {
           showLastUpdateTime: true,
         },
       ],
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'deprecated',
+          path: 'deprecated',
+          routeBasePath: 'deprecated',
+          sidebarPath: './sidebars.js',
+          editCurrentVersion: true,
+          showLastUpdateTime: true,
+        },
+      ]
       // [
       //   '@docusaurus/plugin-content-docs',
       //   {
