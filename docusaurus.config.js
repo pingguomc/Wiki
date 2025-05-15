@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '红星游戏社区 维基',
-  tagline: 'Docusaurus 插件文档模板',
+  tagline: 'RedStarMC社区的百科全书',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -62,7 +62,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Wiki-Template',
+        title: '红星游戏社区',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
@@ -86,7 +86,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'right',
-            label: '管理员必看',
+            label: '管理人员必看',
             docsPluginId: 'admin'
           },
 //          {
@@ -106,10 +106,6 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
         ],
       },
       // 底部链接
@@ -117,11 +113,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '文档',
+            title: '维基',
             items: [
               {
                 label: '开始',
                 to: '/intro',
+              },
+              {
+                label: '关于',
+                to: '/about',
+              },
+              {
+                label: '已归档',
+                to: '/deprecated/intro',
               },
               {
                 label: 'GitHub',
@@ -201,6 +205,17 @@ const config = {
           showLastUpdateTime: true,
         },
       ],
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'deprecated',
+          path: 'deprecated',
+          routeBasePath: 'deprecated',
+          sidebarPath: './sidebars.js',
+          editCurrentVersion: true,
+          showLastUpdateTime: true,
+        },
+      ]
       // [
       //   '@docusaurus/plugin-content-docs',
       //   {
