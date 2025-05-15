@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
-title: 如何加入服务器
 ---
 
 # 如何加入服务器
