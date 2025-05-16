@@ -46,7 +46,7 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           editUrl:
-            'https://github.com/redstarmc/Wiki/blob/main'
+            'https://github.com/redstarmc/Wiki/'
         },
         blog: false,
         theme: {
@@ -175,13 +175,6 @@ const config = {
     }),
     plugins: [
       [
-        '@easyops-cn/docusaurus-search-local',
-        {
-            indexDocs: true,
-            language: "zh",
-        },
-      ],
-      [
         '@docusaurus/plugin-content-docs',
         {
           id: 'admin',
@@ -230,7 +223,13 @@ const config = {
       // ],
     ],
     themes: [
-
+      [
+        '@easyops-cn/docusaurus-search-local',
+        {
+          indexDocs: true,
+          language: "zh",
+        },
+      ],
     ],
 };
 
