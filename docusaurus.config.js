@@ -226,9 +226,11 @@ const config = {
       [
         '@easyops-cn/docusaurus-search-local',
         {
+          hashed: true,
           indexDocs: true,
           language: "zh",
-          docsRouteBasePath: "/",
+          highlightSearchTermsOnTargetPage: true,
+          explicitSearchResultPath: true,
         },
       ],
     ],
