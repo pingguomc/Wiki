@@ -42,7 +42,7 @@ sidebar_position: 1
 官方网站: [`点击进入`](https://www.redstarmc.top/)
 QQ群: 568197092
 Discord: 我们不用
-关于我们： [`关于我们`](../src/pages/about.md)
+关于我们： [`关于我们`](https://www.redstarmc.top/Wiki/about)
 
 :::note
 祝您在RedStar服务器上游戏愉快！
