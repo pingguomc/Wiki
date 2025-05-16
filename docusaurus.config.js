@@ -228,6 +228,7 @@ const config = {
         {
           indexDocs: true,
           language: "zh",
+          docsRouteBasePath: "/",
         },
       ],
     ],
