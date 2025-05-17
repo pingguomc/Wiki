@@ -166,7 +166,8 @@ const config = {
           },
         ],
         // 底部版权信息
-        copyright: `Copyright © 2021 - ${new Date().getFullYear()} RedStarMC Community, All Rights Reserved.`,
+        // copyright: `Copyright © 2021 - ${new Date().getFullYear()} RedStarMC Community, All Rights Reserved.`
+        copyright: `<a href="https://www.redstarmc.top/Wiki">红星游戏社区 维基</a> © 2021 - ${new Date().getFullYear()} 由 <a href="https://www.redstarmc.top">红星游戏社区</a> 授权 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 许可协议</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;" alt="CC"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;" alt="BY"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;" alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;" alt="SA">`
       },
       // 深浅主题
       prism: {
