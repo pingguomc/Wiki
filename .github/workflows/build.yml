@@ -1,11 +1,8 @@
-name: Workflow Build
+name: Build Page
 on:
   push:
     branches:
       - main
-  # pull_request:
-  #   branches:
-  #     - main
 jobs:
   # 自动部署GitPage
   gitpage:
@@ -15,7 +12,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
       with:
-        persist-credentials: false
+        fetch-depth: 0
     # 编译出静态页面
     - name: Install and Build
       run: npm install && npm run build
