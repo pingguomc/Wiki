@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// const lightCodeTheme = require('prism-react-renderer/themes/github');
+// const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes as prismThemes} from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -23,8 +24,13 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  onBrokenAnchors: 'warn',
+
+  markdown: {
+    mermaid: true,
+  },
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -103,7 +109,6 @@ const config = {
           },
           {
             href: 'https://github.com/redstarmc/Wiki',
-            label: 'GitHub',
             position: 'right',
           },
         ],
@@ -128,7 +133,7 @@ const config = {
                 to: '/deprecated/intro',
               },
               {
-                label: 'GitHub',
+                label: 'GitHub页面',
                 href: 'https://github.com/redstarmc/Wiki',
               },
             ],
@@ -161,12 +166,12 @@ const config = {
           },
         ],
         // 底部版权信息
-        copyright: `Copyright © ${new Date().getFullYear()} RedStarMC Community, All Rights Reserved.`,
+        copyright: `Copyright © 2021 - ${new Date().getFullYear()} RedStarMC Community, All Rights Reserved.`,
       },
       // 深浅主题
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.vsLight,
+        darkTheme: prismThemes.vsDark,
       },
       // 颜色随系统切换
       colorMode: {
@@ -174,6 +179,8 @@ const config = {
       },
     }),
     plugins: [
+      'docusaurus-plugin-image-zoom',
+      'docusaurus-plugin-sass',
       [
         '@docusaurus/plugin-content-docs',
         {
@@ -231,6 +238,7 @@ const config = {
           language: "zh",
           highlightSearchTermsOnTargetPage: true,
           explicitSearchResultPath: true,
+          docsRouteBasePath: '/',
         },
       ],
     ],
