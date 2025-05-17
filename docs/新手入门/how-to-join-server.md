@@ -8,4 +8,14 @@ sidebar_position: 1
 
 ***
 
+:::info
+
+地址：`mc.redstarmc.top`
+
+服务器支持的版本 1.12.2 - 1.21.5，推荐使用 1.19.4 以上游玩。
+
+:::
+
 ## TODO
+
+首先，请阅读 [玩家须知](../规则/player-notice.md)。
