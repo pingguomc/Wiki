@@ -21,15 +21,23 @@ sidebar_position: 1
 [社区历史](https://www.redstarmc.top/Wiki/category/history) - 了解曾经的故事
 
 :::tip 
+
 小提示 初次访问？建议先查看 [`如何加入服务器`](getting-started/how-to-join-server.md)，帮助您快速加入服务器！ 
+
 ::: 
 
 :::caution
-重要提醒 请务必遵守服务器规则，违规行为将受到相应处罚。完整规则请查阅 [`规则`](https://www.redstarmc.top/Wiki/category/rules) 章节。
+
+重要提醒 请务必遵守服务器规则，违规行为将受到相应处罚。
+
+完整规则请查阅 [`规则`](https://www.redstarmc.top/Wiki/category/rules) 章节。
+
 ::: 
 
 :::note
+
 服务器支持的版本 1.12.2 - 1.21.5，推荐使用 1.19.4 以上游玩。
+
 :::
 
 ## 联系方式
@@ -54,7 +62,7 @@ Github: [`点击进入`](https://github.com/RedStarMC)
 
 本Wiki由社区共同维护，欢迎您提交编辑请求或报告错误，帮助我们完善内容。
 
-欲贡献Wiki，请阅读： 
+欲贡献Wiki，请阅读： [`贡献`](https://www.redstarmc.top/Wiki/category/contribute)
 
 
 
