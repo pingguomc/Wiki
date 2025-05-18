@@ -67,8 +67,12 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      metadata: [
+        {name: 'keywords', content: 'redstarmc,红星我的世界社区,Wiki,维基,文档,服务器,红星'},
+        {name: 'description', content: '红星我的世界社区维基'},
+      ],
       navbar: {
-        title: '红星我的世界社区',
+        title: '红星我的世界社区维基',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
