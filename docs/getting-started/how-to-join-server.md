@@ -18,4 +18,4 @@ sidebar_position: 1
 
 ## TODO
 
-首先，请阅读 [玩家须知](../规则/player-notice.md)。
+首先，请阅读 [玩家须知](../rules/player-notice.md)。

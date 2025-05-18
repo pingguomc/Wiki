@@ -8,24 +8,24 @@ sidebar_position: 1
 
 ## 快速导航
 
-[服务器介绍](https://www.redstarmc.top/Wiki/category/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BB%8B%E7%BB%8D) - 了解各个服务器的游戏内容
+[服务器介绍](https://www.redstarmc.top/Wiki/category/server-introduce) - 了解各个服务器的游戏内容
 
-[新手入门](https://www.redstarmc.top/Wiki/category/%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8) - 从零开始您的冒险之旅
+[新手入门](https://www.redstarmc.top/Wiki/category/getting-started) - 从零开始您的冒险之旅
 
-[游戏规则](https://www.redstarmc.top/Wiki/category/%E8%A7%84%E5%88%99) - 确保公平游戏的准则
+[游戏规则](https://www.redstarmc.top/Wiki/category/rules) - 确保公平游戏的准则
 
 [特色玩法](#快速导航) - 探索我们独特的游戏内容
 
 [常见问题](#快速导航) - 快速解答您的疑问
 
-[社区历史](https://www.redstarmc.top/Wiki/category/%E5%8E%86%E5%8F%B2) - 了解曾经的故事
+[社区历史](https://www.redstarmc.top/Wiki/category/history) - 了解曾经的故事
 
 :::tip 
-小提示 初次访问？建议先查看 [`如何加入服务器`](./新手入门/how-to-join-server.md)，帮助您快速加入服务器！ 
+小提示 初次访问？建议先查看 [`如何加入服务器`](getting-started/how-to-join-server.md)，帮助您快速加入服务器！ 
 ::: 
 
 :::caution
-重要提醒 请务必遵守服务器规则，违规行为将受到相应处罚。完整规则请查阅 [`规则`](https://www.redstarmc.top/Wiki/category/%E8%A7%84%E5%88%99) 章节。
+重要提醒 请务必遵守服务器规则，违规行为将受到相应处罚。完整规则请查阅 [`规则`](https://www.redstarmc.top/Wiki/category/rules) 章节。
 ::: 
 
 :::note
