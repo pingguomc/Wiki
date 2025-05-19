@@ -114,6 +114,7 @@ const config = {
           {
             href: 'https://github.com/redstarmc/Wiki',
             position: 'right',
+            label: 'GitHub',
           },
         ],
       },
