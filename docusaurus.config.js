@@ -12,10 +12,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://redstarmc.github.io',
+  url: 'https://wiki.redstarmc.top',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Wiki/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -67,8 +67,12 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      metadata: [
+        {name: 'keywords', content: 'redstarmc,红星我的世界社区,Wiki,维基,文档,服务器,红星'},
+        {name: 'description', content: '红星我的世界社区维基'},
+      ],
       navbar: {
-        title: '红星我的世界社区',
+        title: '红星我的世界社区维基',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
@@ -110,6 +114,7 @@ const config = {
           {
             href: 'https://github.com/redstarmc/Wiki',
             position: 'right',
+            label: 'GitHub',
           },
         ],
       },

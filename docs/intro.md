@@ -8,17 +8,17 @@ sidebar_position: 1
 
 ## 快速导航
 
-[服务器介绍](https://www.redstarmc.top/Wiki/category/server-introduce) - 了解各个服务器的游戏内容
+[服务器介绍](https://www.redstarmc.top/Wiki/server-introduce) - 了解各个服务器的游戏内容
 
-[新手入门](https://www.redstarmc.top/Wiki/category/getting-started) - 从零开始您的冒险之旅
+[新手入门](https://www.redstarmc.top/Wiki/getting-started) - 从零开始您的冒险之旅
 
-[游戏规则](https://www.redstarmc.top/Wiki/category/rules) - 确保公平游戏的准则
+[游戏规则](https://www.redstarmc.top/Wiki/rules) - 确保公平游戏的准则
 
 [特色玩法](#快速导航) - 探索我们独特的游戏内容
 
-[常见问题](#快速导航) - 快速解答您的疑问
+[常见问题](https://www.redstarmc.top/Wiki/FAQ) - 快速解答您的疑问
 
-[社区历史](https://www.redstarmc.top/Wiki/category/history) - 了解曾经的故事
+[社区历史](https://www.redstarmc.top/Wiki/history) - 了解曾经的故事
 
 :::tip 
 
