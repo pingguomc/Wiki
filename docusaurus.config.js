@@ -189,7 +189,7 @@ const config = {
                 href: 'https://www.12377.cn/',
               },
               {
-                html: `<a href="https://ipw.cn/ssl/?site=wiki.redstarmc.top" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a> <a href="https://ipw.cn/ipv6webcheck/?site=wiki.redstarmc.top" title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-certified-s1.svg"></a>`,
+                html: `<a href="https://ipw.cn/ssl/?site=wiki.redstarmc.top" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a> <a href="https://ipw.cn/ipv6webcheck/?site=wiki.redstarmc.top" title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-certified-s1.svg"></a><img src="https://w.saobby.com/w/0p5be1o6" alt="访客统计">`,
               },
             ],
           },
