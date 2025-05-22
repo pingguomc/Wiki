@@ -16,6 +16,6 @@ sidebar_position: 1
 
 :::
 
-## TODO
+## 加入之前
 
 首先，请阅读 [玩家须知](../rules/player-notice.md)。
