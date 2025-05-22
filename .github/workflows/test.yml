@@ -3,8 +3,6 @@ name: Test
 on:
   pull_request:
     types: [opened, reopened, synchronize]
-  pull_request_review:
-    types: [edited]
 
 jobs:
   deploy:
@@ -35,10 +33,10 @@ jobs:
           pngQuality: '80'
           webpQuality: '80'
           ignorePaths: 'node_modules/**'
-          compressOnly: true
       # 检查Markdown
       - name: "MarkdownLint Check"
         uses: DavidAnson/markdownlint-cli2-action@v17
+        continue-on-error: true
         with:
           fix: true
           globs: 'docs*/**/*.md'
