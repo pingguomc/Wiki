@@ -77,7 +77,7 @@ const config = {
           alt: 'Logo',
           src: 'img/logo.svg',
         },
-        hideOnScroll: false,
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
@@ -120,7 +120,7 @@ const config = {
       },
       // 底部链接
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: '维基',
@@ -130,42 +130,66 @@ const config = {
                 to: '/intro',
               },
               {
-                label: '关于',
+                label: '关于我们',
                 to: '/about',
+              },
+              {
+                label: '服务条款',
+                to: '/service',
               },
               {
                 label: '已归档',
                 to: '/deprecated/intro',
               },
               {
-                label: 'GitHub页面',
+                label: 'GitHub 仓库',
                 href: 'https://github.com/redstarmc/Wiki',
               },
             ],
           },
           {
-            title: '交流',
+            title: '联系我们',
             items: [
               {
-                label: '官网',
+                label: '官 方 网 站',
                 href: 'https://www.redstarmc.top/'
               },
               {
-                label: '外置登陆身份验证系统',
+                label: 'Minecraft外置登陆身份验证系统',
                 href: 'https://login.redstarmc.top'
               },
               {
-                label: 'QQ频道',
+                label: 'QQ 频道',
                 href: 'https://pd.qq.com/s/1dxf9takj',
               },
             ],
           },
           {
-            title: '友链',
+            title: '友情链接',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/redstarmc/Wiki',
+                label: '未添加',
+                to: '1',
+              }
+            ],
+          },
+          {
+            title: '本站驱动和监督信息',
+            items: [
+              {
+                label: '本站由 GitHub Pages 强力驱动',
+                href: 'https://github.com/',
+              },
+              {
+                label: '本站由 Cloudflare 强力驱动',
+                href: 'https://cloudflare.com/',
+              },
+              {
+                label: '中央网信办违法和不良信息举报中心',
+                href: 'https://www.12377.cn/',
+              },
+              {
+                html: `<a href="https://ipw.cn/ssl/?site=wiki.redstarmc.top" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a> <a href="https://ipw.cn/ipv6webcheck/?site=wiki.redstarmc.top" title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-certified-s1.svg"></a><img src="https://w.saobby.com/w/0p5be1o6" alt="访客统计">`,
               },
             ],
           },
