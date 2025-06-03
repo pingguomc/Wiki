@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 玩家须知
+# ⛔玩家须知
 
 :::caution
 

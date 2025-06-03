@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 管理条例
+# ⛔管理条例
 
 :::tip
 
