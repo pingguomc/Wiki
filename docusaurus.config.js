@@ -83,7 +83,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: '开始',
+            label: '文档',
           },
           {
             type: 'docSidebar',
@@ -91,6 +91,13 @@ const config = {
             position: 'left',
             label: '近期更新',
             docsPluginId: 'release'
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '其人志',
+            docsPluginId: 'renwu'
           },
           {
             type: 'docSidebar',
@@ -245,19 +252,19 @@ const config = {
           editCurrentVersion: true,
           showLastUpdateTime: true,
         },
+      ],
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'renwu',
+          path: 'renwu',
+          routeBasePath: 'renwu',
+          sidebarPath: './sidebars.js',
+          editCurrentVersion: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+        },
       ]
-      // [
-      //   '@docusaurus/plugin-content-docs',
-      //   {
-      //     id: 'logs',
-      //     path: 'logs',
-      //     routeBasePath: 'logs',
-      //     sidebarPath: './sidebars.js',
-      //     editCurrentVersion: true,
-      //     showLastUpdateAuthor: true,
-      //     showLastUpdateTime: true,
-      //   },
-      // ],
     ],
     themes: [
       [
