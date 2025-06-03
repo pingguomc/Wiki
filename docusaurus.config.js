@@ -95,6 +95,13 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '其人志',
+            docsPluginId: 'renwu'
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
             position: 'right',
             label: '管理人员必看',
             docsPluginId: 'admin'
@@ -245,19 +252,19 @@ const config = {
           editCurrentVersion: true,
           showLastUpdateTime: true,
         },
+      ],
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'renwu',
+          path: 'renwu',
+          routeBasePath: 'renwu',
+          sidebarPath: './sidebars.js',
+          editCurrentVersion: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+        },
       ]
-      // [
-      //   '@docusaurus/plugin-content-docs',
-      //   {
-      //     id: 'logs',
-      //     path: 'logs',
-      //     routeBasePath: 'logs',
-      //     sidebarPath: './sidebars.js',
-      //     editCurrentVersion: true,
-      //     showLastUpdateAuthor: true,
-      //     showLastUpdateTime: true,
-      //   },
-      // ],
     ],
     themes: [
       [
