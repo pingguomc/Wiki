@@ -4,8 +4,7 @@ sidebar_position: 1
 
 # 写作规范
 
-欲编辑其他 Wiki 请参考此文档。
-
+欲编辑其他 Wiki 请参考此文档。  
 现有 Wiki 类型定义表格在末尾（懒得看的话照猫画虎就好了吧)。
 
 ***
@@ -13,6 +12,9 @@ sidebar_position: 1
 ## 总规则（适用于所有 wiki ）
 
 * 每条wiki大题目请采用 `一级标题+该wiki简介+分割线+正文` 的格式。
+* 创建新条目 wiki 时请在本文章末尾更新定义表格以方便后续更新。
+* 请区分开哪些 wiki 是给玩家看的、哪些是给管理者看的。
+* 统一使用 `***` 作为分割线
 
 :::tip
 
@@ -22,8 +24,6 @@ sidebar_position: 1
 
 :::danger
 
-* 创建新条目 wiki 时请在本文章末尾更新定义表格以方便后续更新。
-* 请区分开哪些 wiki 是给玩家看的、哪些是给管理者看的。
 * 务必使用标准排版格式 [`基于 Markdown 的中文文档排版规范`](https://zhuanlan.zhihu.com/p/144446995)
 * 参考 [`Docusaurus编辑教程`](https://www.docusaurus.cn/docs)
 
