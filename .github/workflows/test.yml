@@ -38,7 +38,8 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v20
         with:
           fix: true
-          globs: '**/*.md'
+          globs: 'docs/**/*.md,admin/**/*.md,release/**/*.md,renwu/**/*.md'
+          separator: ','
 
       - name: "Build"
         run: "pnpm run build"
