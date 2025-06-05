@@ -38,7 +38,8 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v20
         with:
           fix: true
-          globs: '**/*.md'
+          globs: 'docs/**/*.md,admin/**/*.md,release/**/*.md,renwu/**/*.md'
+          separator: ','
 
       - name: "Build"
         run: "pnpm run build"
@@ -50,7 +51,7 @@ jobs:
     #   - https://gh.io/using-larger-runners (GitHub.com only)
     # Consider using larger runners or machines with greater resources for possible analysis time improvements.
     runs-on: ubuntu-latest
-    need: deploy
+    needs: deploy
     permissions:
       # required for all workflows
       security-events: write
