@@ -33,13 +33,12 @@ jobs:
           pngQuality: '80'
           webpQuality: '80'
           ignorePaths: 'node_modules/**'
-      # 检查Markdown
-      # - name: "MarkdownLint Check"
-      #   uses: DavidAnson/markdownlint-cli2-action@v17
-      #   continue-on-error: true
-      #   with:
-      #     fix: true
-      #     globs: 'docs*/**/*.md'
+       # 检查Markdown
+      - name: "MarkdownLint Check"
+        uses: DavidAnson/markdownlint-cli2-action@v20
+        with:
+          fix: true
+          globs: '**/*.md'
 
       - name: "Build"
         run: "pnpm run build"
