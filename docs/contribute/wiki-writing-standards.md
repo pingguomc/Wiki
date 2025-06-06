@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 写作规范
@@ -22,10 +22,12 @@ sidebar_position: 1
 
 :::
 
-:::danger
+:::warning
 
 * 务必使用标准排版格式 [`基于 Markdown 的中文文档排版规范`](https://zhuanlan.zhihu.com/p/144446995)
 * 参考 [`Docusaurus编辑教程`](https://www.docusaurus.cn/docs)
+
+若格式 不规范但不会 或 不想排版 请在 PR 时提出文档需排版。
 
 :::
 

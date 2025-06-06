@@ -33,13 +33,13 @@ jobs:
           pngQuality: '80'
           webpQuality: '80'
           ignorePaths: 'node_modules/**'
-      # 检查Markdown
-      # - name: "MarkdownLint Check"
-      #   uses: DavidAnson/markdownlint-cli2-action@v17
-      #   continue-on-error: true
-      #   with:
-      #     fix: true
-      #     globs: 'docs*/**/*.md'
+       # 检查Markdown
+      - name: "MarkdownLint Check"
+        uses: DavidAnson/markdownlint-cli2-action@v20
+        with:
+          fix: true
+          globs: 'docs/**/*.md,admin/**/*.md,release/**/*.md,renwu/**/*.md'
+          separator: ','
 
       - name: "Build"
         run: "pnpm run build"
@@ -51,6 +51,7 @@ jobs:
     #   - https://gh.io/using-larger-runners (GitHub.com only)
     # Consider using larger runners or machines with greater resources for possible analysis time improvements.
     runs-on: ubuntu-latest
+    needs: deploy
     permissions:
       # required for all workflows
       security-events: write
