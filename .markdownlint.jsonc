@@ -4,5 +4,7 @@
   "single-h1": false,
   "no-bare-urls": false,
   "no-inline-html": false,
-  "no-alt-text": false
+  "no-alt-text": false,
+  "no-duplicate-heading":{"siblings_only": true},
+  "no-hard-tabs": false
 }

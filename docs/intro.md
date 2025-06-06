@@ -14,12 +14,12 @@ sidebar_position: 1
 :::
 ## 快速导航
 
-[服务器介绍](server-introduce/server-introduce.mdx) - 了解各个服务器的游戏内容  
-[新手入门](getting-started/getting-started.mdx) - 从零开始您的冒险之旅  
-[游戏规则](rules/rules.mdx) - 确保公平游戏的准则  
+[服务器介绍](server-introduce/server-introduce.md) - 了解各个服务器的游戏内容  
+[新手入门](getting-started/getting-started.md) - 从零开始您的冒险之旅  
+[游戏规则](rules/rules.md) - 确保公平游戏的准则  
 [特色玩法](#快速导航) - 探索我们独特的游戏内容  
-[常见问题](FAQ/FAQ.mdx) - 快速解答您的疑问  
-[社区历史](history/history.mdx) - 了解曾经的故事  
+[常见问题](FAQ/FAQ.md) - 快速解答您的疑问  
+[社区历史](history/history.md) - 了解曾经的故事  
 
 :::tip 
 
@@ -30,7 +30,7 @@ sidebar_position: 1
 :::caution
 
 重要提醒 请务必遵守服务器规则，违规行为将受到相应处罚。  
-完整规则请查阅 [`规则`](./rules/rules.mdx) 章节。
+完整规则请查阅 [`规则`](rules/rules.md) 章节。
 
 ::: 
 :::info
