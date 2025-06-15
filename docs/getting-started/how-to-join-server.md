@@ -75,6 +75,16 @@ sidebar_position: 1
 在此网站ctrl+f搜索对应报错信息即可快速查询 
 :::
 
+:::caution 重要须知 
+
+首次登录前请务必阅读 [玩家须知](/rules/player-notice)
+
+所有玩家必须遵守 [管理条例](/rules/management-regulations)
+
+⚠️ 违规行为将受到处罚，包括永久封禁 
+:::
+
+
 ## 进服后
 
 ### 进入子服游玩
@@ -95,14 +105,6 @@ sidebar_position: 1
 如果您建筑、或者彩蛋有贡献兴趣 欢迎 [成为我们的一员](/admin/intro)
 
 
-:::caution 重要须知 
-
-首次登录前请务必阅读 [玩家须知](/rules/player-notice)
-
-所有玩家必须遵守 [管理条例](/rules/management-regulations)
-
-⚠️ 违规行为将受到处罚，包括永久封禁 
-:::
 
 
 
