@@ -46,16 +46,16 @@ sidebar_position: 1
 （示例：/register 123456 123456）
 ```
 或简写为：
-```
+```minecraft
   /reg 你的密码 确认密码
 ```
 
 注册成功后每次登录使用：
-```
+```minecraft
   /login 你的密码
 ```
 同理可简写为：
-```
+```minecraft
 /l 你的密码
 ```
 
