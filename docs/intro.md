@@ -1,64 +1,56 @@
 ---
 id: intro
 sidebar_position: 1
+
 ---
 
-# 欢迎来到 RedStarMC社区官方Wiki
+# 欢迎来到 RedStarMC 社区官方 Wiki {#welcome}
 
-欢迎来到 RedStarMC社区官方Wiki！这里是您获取社区、服务器相关信息，游戏指南，社区规则和历史事件的一站式资源中心。
+欢迎来到 RedStarMC 社区官方 Wiki！这里是您获取社区、服务器相关信息，游戏指南，社区规则和历史事件的一站式资源中心。
 
-:::note
+:::note 版本支持
+服务器兼容版本：**1.12.2 - 1.21.5**  
 
-服务器支持的版本 1.12.2 - 1.21.5，推荐使用 1.19.4 以上游玩。
-
-:::
-## 快速导航
-
-[服务器介绍](server-introduce/server-introduce.md) - 了解各个服务器的游戏内容  
-[新手入门](getting-started/getting-started.md) - 从零开始您的冒险之旅  
-[游戏规则](rules/rules.md) - 确保公平游戏的准则  
-[特色玩法](#快速导航) - 探索我们独特的游戏内容  
-[常见问题](FAQ/FAQ.md) - 快速解答您的疑问  
-[社区历史](history/history.md) - 了解曾经的故事  
-
-:::tip 
-
-小提示 初次访问？建议先查看 [`如何加入服务器`](getting-started/how-to-join-server.md)，帮助您快速加入服务器！ 
-
-::: 
-
-:::caution
-
-重要提醒 请务必遵守服务器规则，违规行为将受到相应处罚。  
-完整规则请查阅 [`规则`](rules/rules.md) 章节。
-
-::: 
-:::info
-
-条目前标有 ⛔ 的为未完工条目，如急需此条目内容请 [`联系管理员`](#联系方式) 或 [`贡献维基`](contribute/i-want-to-contribute.md)
-
+**推荐版本**：1.19.4 及以上
 :::
 
+## 快速导航 {#quick-nav}
 
+- [服务器介绍](/server-introduce) - 了解各服务器游戏内容  
 
-## 联系方式
+- [新手入门](/getting-started) - 从零开始冒险之旅  
 
-:::info
+- [游戏规则](/rules) - 公平游戏准则  
 
-官方网站： [`点击进入`](https://www.redstarmc.top/)  
-QQ群: 568197092 [`点击加群`](https://qm.qq.com/q/Xu2Ac6roMW)  
-Discord: 我们不用  
-Github: [`点击进入`](https://github.com/RedStarMC)  
+- [常见问题](/faq) - 快速解答疑问  
 
+- [社区历史](/history) - 了解历史故事
+
+:::tip 新手指南
+初次访问？建议先查看 [如何加入服务器](/getting-started/how-to-join-server)，快速开启游戏之旅！
 :::
 
-通过上述方式联系我们，以获取帮助和支持。  
-[`关于我们`](/about)
+:::caution 重要提醒
+请务必遵守服务器规则，违规将受处罚。  
+完整规则详见：[规则章节](/category/rules)
+:::
 
-## 贡献Wiki
+:::info 条目状态
+⛔ 标记条目为未完工内容，急需时可联系管理员
+:::
 
-本Wiki由社区共同维护，欢迎您提交编辑请求或报告错误，帮助我们完善内容。  
-欲贡献Wiki，请阅读： [`贡献`](contribute/i-want-to-contribute.md)
+## 联系方式 {#contact}
+:::info 官方渠道
 
+- **官网**：[点击进入](https://www.redstarmc.top/)  
 
+- **QQ群**：568197092 [加群链接](https://qm.qq.com/q/Xu2Ac6roMW)  
 
+- **GitHub**：[项目仓库](https://github.com/RedStarMC)  
+:::
+通过以上方式获取支持，或查看 [关于我们](/about)
+
+## 贡献 Wiki {#contribute}
+本 Wiki 由社区共同维护，欢迎：  
+✅ 提交编辑请求 | ✅ 报告内容错误  
+贡献指南详见：[贡献说明](/contribute)
