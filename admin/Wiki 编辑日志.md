@@ -9,6 +9,10 @@ sidebar_position: 2
 
 ***
 
+## 2025-6-18
+### * pingguomc *
+* 新增 Markdown 本地检查功能。
+
 ## 2025-6-06
 ### * pingguomc *
 * 修复了 Markdown 检查。
