@@ -49,7 +49,7 @@
     "@docusaurus/module-type-aliases": "^3.5.2",
     "@docusaurus/types": "^3.5.2",
     "@tailwindcss/typography": "^0.5.13",
-    "markdownlint-cli2": "^0.14.0",
+    "markdownlint-cli2": "^0.18.1",
     "swc-loader": "^0.2.6"
   },
   "browserslist": {

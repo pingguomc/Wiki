@@ -12,6 +12,10 @@ sidebar_position: 2
 ### * wenjian *
 * 完善了起始页和新手入门页，ai参与人工审核，多数为人工手写
 
+## 2025-6-18
+### * pingguomc *
+* 新增 Markdown 本地检查功能。
+
 ## 2025-6-06
 ### * pingguomc *
 * 修复了 Markdown 检查。

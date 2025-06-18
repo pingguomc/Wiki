@@ -27,7 +27,9 @@ sidebar_position: 2
 * 务必使用标准排版格式 [`基于 Markdown 的中文文档排版规范`](https://zhuanlan.zhihu.com/p/144446995)
 * 参考 [`Docusaurus编辑教程`](https://www.docusaurus.cn/docs)
 
-若格式 不规范但不会 或 不想排版 请在 PR 时提出文档需排版。
+本项目使用 NodeJS ，本地可通过运行 `start` 进行构建预览，也运行 `format` 来检查格式。
+
+若 `格式不规范但不会` 或 `不想排版` 请在 PR 时提出文档需排版。
 
 :::
 
