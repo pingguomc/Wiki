@@ -14,7 +14,7 @@ sidebar_position: 6
 * pingguo —— `腐竹`
 * Wenjian —— `运维`
 * 二狗子 —— `管理`、`玩家群群主`
-* Snowphier —— `协管`、`群管`
+* Snowphier —— `管理`
 * good344654 —— `协管`
 
 ## 管理人员历史任职记录名单
@@ -34,6 +34,8 @@ sidebar_position: 6
 ***
 
 ### 2025年
+
+2025-7-8: `Snowphier` 担任 `管理`
 
 2025-1-20:
 1. `pingguo` 担任 *第四任* `腐竹`
