@@ -16,9 +16,7 @@ sidebar_position: 1
 
 ## 快速导航 {#quick-nav}
 
-- [服务器介绍](server-introduce/server-introduce.md) - 了解各服务器游戏内容  
-
-- [新手入门](getting-started/getting-started.md) - 从零开始冒险之旅  
+- [服务器介绍](server-introduce/server-introduce.md) - 了解各服务器游戏内容
 
 - [游戏规则](rules/rules.md) - 公平游戏准则  
 
@@ -27,7 +25,7 @@ sidebar_position: 1
 - [社区历史](history/history.md) - 了解历史故事
 
 :::tip 新手指南
-初次访问？建议先查看 [如何加入服务器](getting-started/how-to-join-server.md)，快速开启游戏之旅！
+初次访问？建议先查看 [如何加入服务器](how-to-join-server.md)，快速开启游戏之旅！
 :::
 
 :::caution 重要提醒
