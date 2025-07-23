@@ -12,6 +12,7 @@ sidebar_position: 3
 ## 2025-7-23
 ### * pingguo *
 * 添加连锁采集
+* 其人志引导页
 
 ## 2025-7-22
 ### * pingguo *
