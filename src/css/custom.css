@@ -22,9 +22,9 @@
   --balance-4: #e9ecef;
 
   /* 功能色 */
-  --success: #3a6e50;
-  --info: #2d5b7c;
-  --warning: #8c6c3e;
+  --success: #56c66b;
+  --info: #4eabf2;
+  --warning: #ffc32b;
 
   /* 文本系统 */
   --text-primary: var(--balance-1);
@@ -554,31 +554,68 @@ blockquote p {
   border-left-width: 3px;
   padding: 1rem 1.25rem;
   margin: 1rem 0;
-  background-color: var(--bg-alt);
   border-top: 1px solid var(--border-medium);
   border-right: 1px solid var(--border-medium);
   border-bottom: 1px solid var(--border-medium);
   box-shadow: var(--shadow-xs);
 }
 
-.alert--info {
-  --ifm-alert-border-color: var(--info);
-  color: var(--info);
+/* 提示框图标容器（若有图标） */
+.alert__icon {
+  flex-shrink: 0;
+  margin-top: 0.15rem; /* 微调图标垂直位置 */
 }
 
-.alert--success {
-  --ifm-alert-border-color: var(--success);
-  color: var(--success);
+/* 提示框文本容器 */
+.alert__text {
+  flex-grow: 1;
 }
 
-.alert--warning {
-  --ifm-alert-border-color: var(--warning);
-  color: var(--warning);
+/*!* 不同类型提示框的样式强化 *!*/
+/*.alert--info {*/
+/*  --ifm-alert-border-color: var(--info);*/
+/*  color: var(--info);*/
+/*  background-color: rgba(55, 151, 202, 0.56); !* 提高透明度增强区分度 *!*/
+/*}*/
+
+/*.alert--success {*/
+/*  --ifm-alert-border-color: var(--success);*/
+/*  color: var(--success);*/
+/*  background-color: rgba(58, 110, 80, 0.18);*/
+/*}*/
+
+/*.alert--warning {*/
+/*  --ifm-alert-border-color: var(--warning);*/
+/*  color: var(--warning);*/
+/*  background-color: rgba(140, 108, 62, 0.18);*/
+/*}*/
+
+/*.alert--danger {*/
+/*  --ifm-alert-border-color: var(--primary);*/
+/*  color: var(--primary-dark);*/
+/*  background-color: rgba(230, 92, 79, 0.18);*/
+/*}*/
+
+/* 深色模式适配优化 */
+html[data-theme='dark'] .alert {
+  background-color: rgba(36, 44, 51, 0.9);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-.alert--danger {
-  --ifm-alert-border-color: var(--primary);
-  color: var(--primary-dark);
+html[data-theme='dark'] .alert--info {
+  background-color: rgba(45, 91, 124, 0.25);
+}
+
+html[data-theme='dark'] .alert--success {
+  background-color: rgba(58, 110, 80, 0.25);
+}
+
+html[data-theme='dark'] .alert--warning {
+  background-color: rgba(140, 108, 62, 0.25);
+}
+
+html[data-theme='dark'] .alert--danger {
+  background-color: rgba(230, 92, 79, 0.25);
 }
 
 /* ===== 13. 页脚 ===== */
@@ -674,5 +711,11 @@ blockquote p {
 
   .menu__list .menu__list .menu__list .menu__link {
     padding-left: 2.25rem;
+  }
+
+  /* 移动端提示框调整 */
+  .alert {
+    padding: 1rem 1.25rem;
+    gap: 0.5rem;
   }
 }
