@@ -1,30 +1,721 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * RedStarMC 社区维基样式
+ * 使用 AI 生成并人工修改。
  */
 
-/* You can override the default Infima variables here. */
+/* ===== 1. 引入 TailWind 配置 ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== 2. 配色系统 ===== */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* 主色系 */
+  --primary: #e65c4f;
+  --primary-dark: #d14a3c;
+  --primary-light: #f08a7f;
+
+  /* 平衡色系 */
+  --balance-1: #2d3b45;
+  --balance-2: #3d5a6c;
+  --balance-3: #5c6b73;
+  --balance-4: #e9ecef;
+
+  /* 功能色 */
+  --success: #56c66b;
+  --info: #4eabf2;
+  --warning: #ffc32b;
+
+  /* 文本系统 */
+  --text-primary: var(--balance-1);
+  --text-secondary: var(--balance-3);
+  --text-light: #8d99ae;
+
+  /* 背景系统 */
+  --bg-page: #fcfcfa;
+  --bg-container: #ffffff;
+  --bg-alt: #f8f7f4;
+  --bg-hover: #f1efe9;
+
+  /* 边框与阴影 */
+  --border-light: #e0ded7;
+  --border-medium: #d2cfc4;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  /* 过渡效果 */
+  --transition-normal: 0.25s ease;
+
+  /* Docusaurus 映射 */
+  --ifm-color-primary: var(--primary);
+  --ifm-color-primary-dark: var(--primary-dark);
+  --ifm-color-primary-light: var(--primary-light);
+  --ifm-font-color-base: var(--text-primary);
+  --ifm-background-color: var(--bg-page);
+  --ifm-background-surface-color: var(--bg-container);
+  --ifm-border-color: var(--border-light);
+  --docusaurus-highlighted-code-line-bg: rgba(230, 92, 79, 0.06);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+html[data-theme='dark'] {
+  --primary: #f0786a;
+  --primary-dark: #e65c4f;
+
+  --balance-1: #e0e5e8;
+  --balance-2: #b9c5cd;
+  --balance-3: #8d9ba6;
+  --balance-4: #2a333a;
+
+  --success: #5a9e78;
+  --info: #4a7fb3;
+  --warning: #c4a059;
+
+  --text-primary: var(--balance-1);
+  --text-secondary: var(--balance-2);
+  --text-light: #778794;
+
+  --bg-page: #171c20;
+  --bg-container: #1f262b;
+  --bg-alt: #242c33;
+  --bg-hover: #2d3740;
+
+  --border-light: #354048;
+  --border-medium: #41505e;
+
+  --ifm-background-color: var(--bg-page);
+  --ifm-background-surface-color: var(--bg-container);
+  --ifm-border-color: var(--border-light);
+  --docusaurus-highlighted-code-line-bg: rgba(230, 92, 79, 0.12);
+}
+
+/* ===== 3. 基础布局 ===== */
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.65;
+  font-size: 1rem;
+  transition: background-color var(--transition-normal);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/* ===== 4. 导航栏 ===== */
+.navbar {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-xs);
+  height: 3.5rem;
+  padding: 0 1.5rem;
+}
+
+.navbar__brand {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.navbar__brand:hover .navbar__logo {
+  transform: rotate(5deg);
+}
+
+.navbar__link {
+  color: var(--text-secondary);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all var(--transition-normal);
+}
+
+.navbar__link:hover {
+  color: var(--primary);
+  background-color: var(--bg-hover);
+}
+
+.navbar__link--active {
+  color: var(--primary);
+  background-color: var(--bg-hover);
+  font-weight: 500;
+  box-shadow: inset 0 0 0 1px rgba(230, 92, 79, 0.2);
+}
+
+.dropdown__menu {
+  background-color: var(--bg-container);
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-sm);
+  border-radius: 6px;
+}
+
+.dropdown__link {
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  transition: all var(--transition-normal);
+}
+
+.dropdown__link:hover {
+  background-color: var(--bg-hover);
+  color: var(--primary);
+}
+
+/* ===== 5. 侧边栏（修复目录缩进问题） ===== */
+.theme-doc-sidebar-container {
+  background-color: var(--bg-alt);
+  border-right: 1px solid var(--border-medium);
+  padding-top: 1rem;
+}
+
+/* 统一菜单容器样式，消除异常缩进 */
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* 修复一级菜单缩进 */
+.menu__list-item:first-child .menu__link {
+  padding-left: 1rem;
+}
+
+/* 统一各级菜单缩进，解决异常问题 */
+.menu__list {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* 一级菜单 */
+.menu__list-item:not(.menu__list-item-collapsible) > .menu__link {
+  padding-left: 1rem;
+}
+
+/* 二级菜单 - 统一缩进 */
+.menu__list .menu__list .menu__link {
+  padding-left: 2rem;
+}
+
+/* 三级菜单 - 统一缩进 */
+.menu__list .menu__list .menu__list .menu__link {
+  padding-left: 3rem;
+}
+
+/* 折叠项样式 */
+.menu__list-item-collapsible {
+  padding: 0;
+  margin: 0;
+}
+
+/* 折叠项标题 */
+.menu__list-item-collapsible > .menu__link {
+  color: var(--balance-2);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 菜单项通用样式 */
+.menu__link {
+  color: var(--text-secondary);
+  padding: 0.45rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0 4px 4px 0;
+  transition: all var(--transition-normal);
+  display: block;
+}
+
+.menu__link:hover {
+  color: var(--primary);
+  background-color: var(--bg-hover);
+  transform: translateX(2px);
+}
+
+.menu__link--active {
+  color: var(--primary);
+  background-color: var(--bg-hover);
+  font-weight: 500;
+  box-shadow: inset 3px 0 0 var(--primary);
+}
+
+/* 移除多余边框，解决视觉偏移 */
+.menu__list .menu__list {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* ===== 6. 内容卡片 ===== */
+.card {
+  background-color: var(--bg-container);
+  border: 1px solid var(--border-medium);
+  border-radius: 8px;
+  box-shadow: var(--shadow-xs);
+  padding: 1.25rem !important;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--balance-2));
+  border-radius: 0 0 8px 8px;
+  opacity: 0.7;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(230, 92, 79, 0.2);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--balance-1);
+  display: flex;
+  align-items: center;
+}
+
+.card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ===== 7. 按钮 ===== */
+.button {
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  transition: all var(--transition-normal);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button--primary {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 2px 3px rgba(230, 92, 79, 0.2),
+  0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button--primary:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0 3px 5px rgba(230, 92, 79, 0.25);
+  transform: translateY(-1px);
+}
+
+.button--secondary {
+  background-color: var(--bg-alt);
+  color: var(--balance-2);
+  border: 1px solid var(--border-medium);
+}
+
+.button--secondary:hover {
+  background-color: var(--bg-hover);
+  color: var(--primary);
+}
+
+.button--link {
+  color: var(--balance-2);
+  padding: 0.5rem 0.75rem;
+}
+
+.button--link:hover {
+  color: var(--primary);
+  background-color: transparent;
+}
+
+/* ===== 8. 文档内容区（优化标题层级） ===== */
+article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+/* 一级标题 */
+article h1 {
+  font-size: 2rem;
+  margin: 2rem 0 1.5rem;
+  color: var(--balance-1);
+  border-bottom: 2px solid var(--border-medium);
+  padding-bottom: 0.75rem;
+  font-weight: 700;
+  position: relative;
+}
+
+article h1:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+/* 二级标题 - 增强区分度 */
+article h2 {
+  font-size: 1.6rem;
+  margin: 1.75rem 0 1rem;
+  color: var(--balance-1);
+  font-weight: 600;
+  position: relative;
+  padding-left: 1rem;
+  line-height: 1.4;
+}
+
+article h2:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  bottom: 0.3rem;
+  width: 4px;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+/* 三级标题 - 与二级标题明显区分 */
+article h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.85rem;
+  color: var(--balance-2);
+  font-weight: 600;
+  position: relative;
+  padding-left: 0.75rem;
+}
+
+article h3:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--balance-3);
+}
+
+/* 四级标题 - 新增样式 */
+article h4 {
+  font-size: 1.15rem;
+  margin: 1.25rem 0 0.75rem;
+  color: var(--balance-3);
+  font-weight: 600;
+  position: relative;
+  padding-left: 0.75rem;
+}
+
+article h4:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-light);
+}
+
+/* 段落文本 */
+article p {
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* 链接样式 */
+article a {
+  color: var(--balance-2);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-normal);
+  position: relative;
+}
+
+article a:hover {
+  color: var(--primary);
+}
+
+article a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transition: transform var(--transition-normal);
+}
+
+article a:hover:after {
+  transform: scaleX(1);
+}
+
+/* ===== 9. 代码块 ===== */
+pre {
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-medium);
+  border-radius: 6px;
+  margin: 1.25rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  box-shadow: var(--shadow-xs);
+  position: relative;
+}
+
+pre:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--balance-3), var(--balance-2));
+  border-radius: 6px 6px 0 0;
+}
+
+:not(pre) > code {
+  background-color: var(--bg-alt);
+  color: var(--primary-dark);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.875rem;
+}
+
+/* ===== 10. 表格 ===== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border-medium);
+  background-color: var(--bg-container);
+}
+
+th {
+  background-color: var(--bg-alt);
+  color: var(--balance-1);
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-medium);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color var(--transition-normal);
+}
+
+tr:hover td {
+  background-color: var(--bg-hover);
+}
+
+/* ===== 11. 引用块 ===== */
+blockquote {
+  border-left: 3px solid var(--balance-3);
+  background-color: var(--bg-alt);
+  border-radius: 0 4px 4px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+/* ===== 12. 提示框 ===== */
+.alert {
+  border-radius: 6px;
+  border-left-width: 3px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-top: 1px solid var(--border-medium);
+  border-right: 1px solid var(--border-medium);
+  border-bottom: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-xs);
+}
+
+/* 提示框图标容器（若有图标） */
+.alert__icon {
+  flex-shrink: 0;
+  margin-top: 0.15rem; /* 微调图标垂直位置 */
+}
+
+/* 提示框文本容器 */
+.alert__text {
+  flex-grow: 1;
+}
+
+/*!* 不同类型提示框的样式强化 *!*/
+/*.alert--info {*/
+/*  --ifm-alert-border-color: var(--info);*/
+/*  color: var(--info);*/
+/*  background-color: rgba(55, 151, 202, 0.56); !* 提高透明度增强区分度 *!*/
+/*}*/
+
+/*.alert--success {*/
+/*  --ifm-alert-border-color: var(--success);*/
+/*  color: var(--success);*/
+/*  background-color: rgba(58, 110, 80, 0.18);*/
+/*}*/
+
+/*.alert--warning {*/
+/*  --ifm-alert-border-color: var(--warning);*/
+/*  color: var(--warning);*/
+/*  background-color: rgba(140, 108, 62, 0.18);*/
+/*}*/
+
+/*.alert--danger {*/
+/*  --ifm-alert-border-color: var(--primary);*/
+/*  color: var(--primary-dark);*/
+/*  background-color: rgba(230, 92, 79, 0.18);*/
+/*}*/
+
+/* 深色模式适配优化 */
+html[data-theme='dark'] .alert {
+  background-color: rgba(36, 44, 51, 0.9);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+html[data-theme='dark'] .alert--info {
+  background-color: rgba(45, 91, 124, 0.25);
+}
+
+html[data-theme='dark'] .alert--success {
+  background-color: rgba(58, 110, 80, 0.25);
+}
+
+html[data-theme='dark'] .alert--warning {
+  background-color: rgba(140, 108, 62, 0.25);
+}
+
+html[data-theme='dark'] .alert--danger {
+  background-color: rgba(230, 92, 79, 0.25);
+}
+
+/* ===== 13. 页脚 ===== */
+.footer {
+  background-color: var(--bg-alt);
+  border-top: 1px solid var(--border-medium);
+  padding: 2rem 0 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer__title {
+  color: var(--balance-1);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer__link-item {
+  color: var(--text-secondary);
+  display: block;
+  padding: 0.35rem 0;
+  transition: color var(--transition-normal);
+  font-size: 0.9rem;
+}
+
+.footer__link-item:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer__copyright {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-medium);
+}
+
+/* ===== 14. 响应式调整 ===== */
+@media (max-width: 996px) {
+  .navbar {
+    height: auto;
+    padding: 0.75rem 1rem;
+  }
+
+  .theme-doc-sidebar-container {
+    border-right: none;
+    border-bottom: 1px solid var(--border-medium);
+  }
+
+  /* 响应式标题调整 */
+  article h1 {
+    font-size: 1.8rem;
+  }
+
+  article h2 {
+    font-size: 1.45rem;
+  }
+
+  article h3 {
+    font-size: 1.25rem;
+  }
+
+  article h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* 移动端标题调整 */
+  article h1 {
+    font-size: 1.6rem;
+  }
+
+  article h2 {
+    font-size: 1.35rem;
+  }
+
+  /* 移动端侧边栏缩进优化 */
+  .menu__list .menu__list .menu__link {
+    padding-left: 1.5rem;
+  }
+
+  .menu__list .menu__list .menu__list .menu__link {
+    padding-left: 2.25rem;
+  }
+
+  /* 移动端提示框调整 */
+  .alert {
+    padding: 1rem 1.25rem;
+    gap: 0.5rem;
+  }
 }
