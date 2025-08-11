@@ -1,16 +1,14 @@
-/* 时间轴容器 */
-.timeline-container {
+.rsmc-timeline {
     position: relative;
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* 排序切换按钮 */
-.timeline-toggle {
+.rsmc-timeline__toggle {
     position: relative;
-    z-index: 10; /* 确保在轴线之上 */
-    margin: 0 0 2rem auto; /* 右对齐 */
+    z-index: 10;
+    margin: 0 0 2rem auto;
     padding: 0.5rem 1.25rem;
     background-color: var(--balance-2);
     color: var(--bg-container);
@@ -18,178 +16,103 @@
     border-radius: 4px;
     font-size: 0.9rem;
     cursor: pointer;
-    transition: all var(--transition-normal);
-    display: block; /* 确保margin生效 */
+    display: block;
 }
 
-.timeline-toggle:hover {
-    background-color: var(--primary);
-    transform: translateY(-2px);
-    box-shadow: 0 2px 8px rgba(230, 92, 79, 0.25);
-}
-
-/* 中央轴线 */
-.timeline-axis {
+.rsmc-timeline__axis {
     position: absolute;
     left: 50%;
     top: 0;
     bottom: 0;
     width: 4px;
-    background: linear-gradient(
-            to bottom,
-            var(--primary-light),
-            var(--balance-2),
-            var(--primary-dark)
-    ); /* 多色渐变 */
+    background: linear-gradient(to bottom, var(--primary-light), var(--balance-2), var(--primary-dark));
     transform: translateX(-50%);
-    border-radius: 2px;
+    z-index: 1;
 }
 
-/* 时间轴项目容器 */
-.timeline-item {
+.rsmc-timeline__item {
     position: relative;
+    width: 45%;
     margin-bottom: 3rem;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease;
-    width: 45%;
 }
 
-/* 左右交替布局 */
-.timeline-item-left {
-    left: 0;
-}
+.rsmc-timeline__item--left { left: 0; }
+.rsmc-timeline__item--right { left: 55%; }
+.rsmc-timeline__item.visible { opacity: 1; transform: translateY(0); }
 
-.timeline-item-right {
-    left: 55%;
-}
-
-/* 项目可见性动画 */
-.timeline-item.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* 内容卡片 */
-.timeline-content {
+.rsmc-timeline__content {
     background-color: var(--bg-container);
     border: 1px solid var(--border-medium);
     border-radius: 8px;
     padding: 1.25rem;
     box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-    border-left: 3px solid transparent; /* 左侧预留边框位 */
 }
 
-/* 左右卡片区分配色 */
-.timeline-item-left .timeline-content {
-    border-left-color: var(--balance-2); /* 左卡片左侧边用平衡色2 */
-}
+.rsmc-timeline__item--left .rsmc-timeline__content { border-left: 3px solid var(--balance-2); }
+.rsmc-timeline__item--right .rsmc-timeline__content { border-left: 3px solid var(--primary); }
 
-.timeline-item-right .timeline-content {
-    border-left-color: var(--primary); /* 右卡片左侧边用主色 */
-}
-
-.timeline-item:hover .timeline-content {
-    transform: scale(1.02);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-/* 日期标签 */
-.timeline-date {
+.rsmc-timeline__date {
     color: var(--balance-2);
     font-weight: 600;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
-    display: inline-block;
-    padding: 0.2rem 0.6rem;
-    background-color: rgba(61, 90, 108, 0.1);
-    border-radius: 4px;
 }
 
-/* 标题样式 */
-.timeline-title {
+.rsmc-timeline__title {
     margin: 0 0 0.75rem 0;
-    color: var(--text-primary);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--balance-1);
 }
 
-/* 描述文本 */
-.timeline-description {
+.rsmc-timeline__title-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.rsmc-timeline__title-link:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.rsmc-timeline__description {
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
-/* 连接点样式 */
-.timeline-dot {
+.rsmc-timeline__dot {
     position: absolute;
     top: 1.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: var(--bg-container);
     border: 3px solid var(--balance-2);
-    box-shadow: 0 0 0 2px rgba(230, 92, 79, 0.3);
-    transition: transform 0.3s ease;
     z-index: 5;
 }
 
-/* 左右项目的连接点位置调整 */
-.timeline-item-left .timeline-dot {
-    right: -1.125rem; /* 右侧超出 */
-}
+.rsmc-timeline__item--left .rsmc-timeline__dot { right: -12px; }
+.rsmc-timeline__item--right .rsmc-timeline__dot { left: -12px; }
 
-.timeline-item-right .timeline-dot {
-    left: -1.125rem; /* 左侧超出 */
-}
-
-.timeline-item:hover .timeline-dot {
-    transform: scale(1.2);
-    box-shadow: 0 0 0 3px rgba(61, 90, 108, 0.2);
-}
-
-/* 响应式调整 */
 @media (max-width: 768px) {
-    /* 移动端轴线居中 */
-    .timeline-axis {
-        left: 1.5rem;
+    .rsmc-timeline__axis {
+        left: 30px;
+        transform: none;
     }
-
-    /* 移动端所有项目居左 */
-    .timeline-item {
+    .rsmc-timeline__item {
         width: 100%;
         left: 0 !important;
-        padding-left: 4rem;
+        padding-left: 60px;
     }
-
-    /* 调整连接点位置 */
-    .timeline-item .timeline-dot {
-        left: 0.375rem; /* 与轴线对齐 */
-        right: auto;
+    .rsmc-timeline__dot {
+        left: 30px !important;
+        right: auto !important;
+        transform: translateX(-50%);
     }
-
-    /* 按钮适配 */
-    .timeline-toggle {
-        margin-right: 0.5rem;
-        padding: 0.4rem 1rem;
-        font-size: 0.85rem;
-    }
-}
-
-/* 深色模式适配 */
-html[data-theme='dark'] .timeline-date {
-    background-color: rgba(61, 90, 108, 0.3);
-}
-
-html[data-theme='dark'] .timeline-item-left .timeline-content {
-    border-left-color: var(--balance-3);
-}
-
-html[data-theme='dark'] .timeline-dot {
-    box-shadow: 0 0 0 2px rgba(240, 120, 106, 0.4);
-}
-
-html[data-theme='dark'] .timeline-item:hover .timeline-dot {
-    box-shadow: 0 0 0 3px rgba(185, 197, 205, 0.2);
 }
