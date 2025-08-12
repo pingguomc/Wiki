@@ -1,3 +1,6 @@
+/*
+ * 使用 AI 生成并人工修改。
+ */
 .rsmc-timeline {
     position: relative;
     max-width: 1200px;
@@ -17,6 +20,7 @@
     font-size: 0.9rem;
     cursor: pointer;
     display: block;
+    /*display: none;*/
 }
 
 .rsmc-timeline__axis {
@@ -116,3 +120,4 @@
         transform: translateX(-50%);
     }
 }
+

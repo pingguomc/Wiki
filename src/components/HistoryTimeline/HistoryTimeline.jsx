@@ -41,7 +41,7 @@ const HistoryTimeline = ({ events }) => {
                 className="rsmc-timeline__toggle"
                 onClick={toggleOrder}
             >
-                {isAscending ? '切换为 最新在前' : '切换为 最早在前'}
+                {isAscending ? '最新在前' : '最早在前'}
             </button>
 
             <div className="rsmc-timeline__axis"></div>
@@ -74,7 +74,7 @@ const HistoryTimeline = ({ events }) => {
                         </h3>
                         <div className="rsmc-timeline__description">{event.description}</div>
                     </div>
-                    <div className="rsmc-timeline__dot"></div>
+                    {/*<div className="rsmc-timeline__dot"></div>*/}
                 </div>
             ))}
         </div>
