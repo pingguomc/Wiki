@@ -9,6 +9,11 @@ sidebar_position: 3
 
 ***
 
+## 2025-8-20
+### * wenjian *
+* 完善readme和q&a
+* 补坑活动策划规范
+
 ## 2025-7-24
 ### * pingguo *
 * 生存服介绍添加CO使用方法
