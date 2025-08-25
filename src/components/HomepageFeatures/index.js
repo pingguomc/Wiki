@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: '永久公益',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/undraw_wenjian.svg').default,
     description: (
       <>
         绝对不会圈走您的钱.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: '玩法多样',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/undraw_pingguo.svg').default,
     description: (
       <>
         有什么点子记得和我们说
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: '社区优质',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/undraw_snow.svg').default,
     description: (
       <>
         多说无益, 加入社区玩玩就知道了.
