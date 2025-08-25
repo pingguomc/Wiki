@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: '社区优质',
-    Svg: require('@site/static/img/undraw_yjq.svg').default,
+    Svg: require('@site/static/img/undraw_snow.svg').default,
     description: (
       <>
         多说无益, 加入社区玩玩就知道了.
