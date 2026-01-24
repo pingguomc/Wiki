@@ -1,23 +1,86 @@
 /**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
+ * ========================================
+ * 首页 Hero 区域样式
+ * ========================================
+ * 
+ * 文件类型：CSS Modules（类名会被自动添加哈希后缀）
  */
+
+/* -------------------- Hero 容器 -------------------- */
 
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  /* 背景图片由 JS 动态设置 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* 移动端适配 */
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
 }
 
+/* -------------------- 标题与副标题 -------------------- */
+
+.heroTitle {
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.heroSubtitle {
+  color: #f0f0f0;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* -------------------- 按钮组 -------------------- */
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
+}
+
+.heroButton {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.heroButton:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 深色模式：按钮文字改为白色 */
+[data-theme='dark'] .heroButton {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .heroButton:hover {
+  color: #f0f0f0 !important;
+}
+
+/* -------------------- 查看原图按钮 -------------------- */
+
+.previewButton {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.previewButton:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
 }

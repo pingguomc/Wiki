@@ -551,19 +551,20 @@ blockquote p {
 /* ===== 12. 提示框 ===== */
 .alert {
   border-radius: 6px;
-  border-left-width: 3px;
+  border-left-width: 4px;
+  border-left-style: solid;
   padding: 1rem 1.25rem;
   margin: 1rem 0;
-  border-top: 1px solid var(--border-medium);
-  border-right: 1px solid var(--border-medium);
-  border-bottom: 1px solid var(--border-medium);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
   box-shadow: var(--shadow-xs);
 }
 
-/* 提示框图标容器（若有图标） */
+/* 提示框图标容器 */
 .alert__icon {
   flex-shrink: 0;
-  margin-top: 0.15rem; /* 微调图标垂直位置 */
+  margin-top: 0.15rem;
 }
 
 /* 提示框文本容器 */
@@ -571,53 +572,74 @@ blockquote p {
   flex-grow: 1;
 }
 
-/*!* 不同类型提示框的样式强化 *!*/
-/*.alert--info {*/
-/*  --ifm-alert-border-color: var(--info);*/
-/*  color: var(--info);*/
-/*  background-color: rgba(55, 151, 202, 0.56); !* 提高透明度增强区分度 *!*/
-/*}*/
+/* -------------------- 浅色模式提示框 -------------------- */
 
-/*.alert--success {*/
-/*  --ifm-alert-border-color: var(--success);*/
-/*  color: var(--success);*/
-/*  background-color: rgba(58, 110, 80, 0.18);*/
-/*}*/
+/* Note 提示 - 灰蓝色 */
+.alert--secondary {
+  border-left-color: #64748b;
+  background-color: #f1f5f9;
+  color: #334155;
+}
 
-/*.alert--warning {*/
-/*  --ifm-alert-border-color: var(--warning);*/
-/*  color: var(--warning);*/
-/*  background-color: rgba(140, 108, 62, 0.18);*/
-/*}*/
+/* Info 信息 - 青色 */
+.alert--info {
+  border-left-color: #14b8a6;
+  background-color: #f0fdfa;
+  color: #115e59;
+}
 
-/*.alert--danger {*/
-/*  --ifm-alert-border-color: var(--primary);*/
-/*  color: var(--primary-dark);*/
-/*  background-color: rgba(230, 92, 79, 0.18);*/
-/*}*/
+/* Tip 提示 - 黄绿色 */
+.alert--success {
+  border-left-color: #84cc16;
+  background-color: #f7fee7;
+  color: #3f6212;
+}
 
-/* 深色模式适配优化 */
-html[data-theme='dark'] .alert {
-  background-color: rgba(36, 44, 51, 0.9);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+/* Caution 警告 - 橙黄色 */
+.alert--warning {
+  border-left-color: #f59e0b;
+  background-color: #fffbeb;
+  color: #92400e;
+}
+
+/* Danger 危险 - 红色 */
+.alert--danger {
+  border-left-color: #ef4444;
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+/* -------------------- 深色模式提示框 -------------------- */
+
+html[data-theme='dark'] .alert--secondary {
+  border-left-color: #94a3b8;
+  background-color: #1e293b;
+  color: #cbd5e1;
 }
 
 html[data-theme='dark'] .alert--info {
-  background-color: rgba(45, 91, 124, 0.25);
+  border-left-color: #2dd4bf;
+  background-color: #134e4a;
+  color: #99f6e4;
 }
 
 html[data-theme='dark'] .alert--success {
-  background-color: rgba(58, 110, 80, 0.25);
+  border-left-color: #a3e635;
+  background-color: #1a2e05;
+  color: #d9f99d;
 }
 
 html[data-theme='dark'] .alert--warning {
-  background-color: rgba(140, 108, 62, 0.25);
+  border-left-color: #fbbf24;
+  background-color: #422006;
+  color: #fde68a;
 }
 
 html[data-theme='dark'] .alert--danger {
-  background-color: rgba(230, 92, 79, 0.25);
+  border-left-color: #f87171;
+  background-color: #450a0a;
+  color: #fecaca;
 }
-
 /* ===== 13. 页脚 ===== */
 .footer {
   background-color: var(--bg-alt);
