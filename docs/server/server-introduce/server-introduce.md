@@ -1,6 +1,6 @@
 ---
-slug: /server-introduce
-sidebar_position: 3
+slug: /server/server-introduce
+sidebar_position: 2
 ---
 
 # 服务器介绍
