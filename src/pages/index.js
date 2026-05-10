@@ -20,11 +20,11 @@ import styles from './index.module.css';
 
 // 默认图片池（全年显示）
 const defaultImages = [
-  '/img/hero/bg1.jpg',
+  '/img/hero/bg1.png',
   '/img/hero/bg2.jpg',
   '/img/hero/bg3.jpg',
   '/img/hero/bg4.png',
-  '/img/hero/bg5.png',
+  '/img/hero/bg5.jpg',
 ];
 
 /*
